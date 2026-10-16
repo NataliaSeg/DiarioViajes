@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "DiarioViajes",
+    "slug": "DiarioViajes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E7C86"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.natalia.diarioviajes"
+    },
+    "android": {
+      "package": "com.tunombre.diarioviajes",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0E7C86"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "DiarioViajes necesita la cámara para tomar las fotos de tus recuerdos."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "DiarioViajes usa tu ubicación para anotar el lugar de cada foto."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "DiarioViajes usa los sensores de movimiento para la brújula."
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "05740f6a-47f2-43f1-a794-1ce340958db9"
+      }
+    }
+  }
+}
